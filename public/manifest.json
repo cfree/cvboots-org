@@ -3,9 +3,9 @@
   "name": "Coachella Valley Bootblack Association",
   "icons": [
     {
-      "src": "favicon.png",
-      "type": "image/png",
-      "sizes": "32x32"
+      "src": "favicon.webp",
+      "type": "image/webp",
+      "sizes": "800x756"
     },
     {
       "src": "logo192.png",

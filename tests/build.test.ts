@@ -47,7 +47,7 @@ describe('production build', () => {
       'name="description" content="CVBA keeps the bootblack tradition alive',
     )
     expect(html).toContain('rel="icon"')
-    expect(html).toContain('href="/favicon.png"')
+    expect(html).toContain('href="/favicon.webp"')
     expect(html).toContain('rel="apple-touch-icon"')
     expect(html).toContain('property="og:title"')
     expect(html).toContain('property="og:description"')

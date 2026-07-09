@@ -3,6 +3,7 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import { MISSION_STATEMENT } from '@/components/Mission'
+import { NotFound } from '@/components/NotFound'
 import { getAnalyticsScripts } from '@/lib/analytics'
 
 import appCss from '../styles.css?url'
@@ -11,6 +12,7 @@ const SITE_TITLE =
   'Coachella Valley Bootblack Association — Bootblacks Stand Together'
 
 export const Route = createRootRoute({
+  notFoundComponent: NotFound,
   head: () => ({
     meta: [
       {
@@ -67,8 +69,8 @@ export const Route = createRootRoute({
       },
       {
         rel: 'icon',
-        type: 'image/png',
-        href: '/favicon.png',
+        type: 'image/webp',
+        href: '/favicon.webp',
       },
       {
         rel: 'apple-touch-icon',
@@ -86,7 +88,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <TanStackDevtools
           config={{
