@@ -4,30 +4,31 @@
 @import '@fontsource/archivo/700.css';
 @import '@fontsource/archivo/900.css';
 @import '@fontsource/rubik-distressed/index.css';
+@import '@fontsource/rubik-doodle-shadow/index.css';
 @import './collage.css';
 
 @theme {
   --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Rubik Distressed', 'Archivo Black', system-ui, sans-serif;
+  --font-display: 'Rubik Doodle Shadow', 'Archivo Black', system-ui, sans-serif;
 
-  --color-background: #f5f3ef;
-  --color-foreground: #111111;
-  --color-card: #f5f3ef;
-  --color-card-foreground: #111111;
-  --color-popover: #f5f3ef;
-  --color-popover-foreground: #111111;
-  --color-primary: #111111;
-  --color-primary-foreground: #f5f3ef;
-  --color-secondary: #e4e0d8;
-  --color-secondary-foreground: #111111;
-  --color-muted: #e4e0d8;
+  --color-background: #f2f2f1;
+  --color-foreground: #121212;
+  --color-card: #f2f2f1;
+  --color-card-foreground: #121212;
+  --color-popover: #f2f2f1;
+  --color-popover-foreground: #121212;
+  --color-primary: #121212;
+  --color-primary-foreground: #f2f2f1;
+  --color-secondary: #dcdcdb;
+  --color-secondary-foreground: #121212;
+  --color-muted: #dcdcdb;
   --color-muted-foreground: #4a4a4a;
-  --color-accent: #DF0237;
-  --color-accent-foreground: #f5f3ef;
+  --color-accent: #df0237;
+  --color-accent-foreground: #f2f2f1;
   --color-destructive: #c8321f;
-  --color-destructive-foreground: #f5f3ef;
-  --color-border: #d8d3c8;
-  --color-input: #d8d3c8;
+  --color-destructive-foreground: #f2f2f1;
+  --color-border: #cfcfce;
+  --color-input: #cfcfce;
   --color-ring: #c8321f;
   --radius-sm: 0.125rem;
   --radius-md: 0.1875rem;
@@ -50,4 +51,23 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url('/concrete.jpg');
+  background-position: center;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.6)), 
+    url('/lug.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }

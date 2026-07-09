@@ -13,4 +13,13 @@ describe('Hero', () => {
     ).toBeInTheDocument()
     expect(screen.getByText(/bootblacks stand together/i)).toBeInTheDocument()
   })
+
+  it('renders the CVBA logo inside the collage graphic', () => {
+    render(<Hero />)
+
+    const logo = screen.getByRole('img', {
+      name: /coachella valley bootblack association logo/i,
+    })
+    expect(logo).toHaveAttribute('src', '/logo.png')
+  })
 })

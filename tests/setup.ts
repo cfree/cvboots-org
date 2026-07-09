@@ -1,6 +1,10 @@
+import { afterEach } from 'vitest'
+import { cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/vitest'
 
 if (typeof window !== 'undefined') {
+  afterEach(cleanup)
+
   window.matchMedia = (query: string) => ({
     matches: false,
     media: query,
