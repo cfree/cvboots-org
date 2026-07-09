@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@import '@fontsource/archivo/400.css';
+@import '@fontsource/archivo/600.css';
+@import '@fontsource/archivo/700.css';
+@import '@fontsource/archivo/900.css';
+@import '@fontsource/rubik-distressed/index.css';
+@import './collage.css';
+
+@theme {
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik Distressed', 'Archivo Black', system-ui, sans-serif;
+
+  --color-background: #f5f3ef;
+  --color-foreground: #111111;
+  --color-card: #f5f3ef;
+  --color-card-foreground: #111111;
+  --color-popover: #f5f3ef;
+  --color-popover-foreground: #111111;
+  --color-primary: #111111;
+  --color-primary-foreground: #f5f3ef;
+  --color-secondary: #e4e0d8;
+  --color-secondary-foreground: #111111;
+  --color-muted: #e4e0d8;
+  --color-muted-foreground: #4a4a4a;
+  --color-accent: #DF0237;
+  --color-accent-foreground: #f5f3ef;
+  --color-destructive: #c8321f;
+  --color-destructive-foreground: #f5f3ef;
+  --color-border: #d8d3c8;
+  --color-input: #d8d3c8;
+  --color-ring: #c8321f;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.1875rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.375rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
