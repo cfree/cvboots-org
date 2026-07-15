@@ -1,6 +1,7 @@
 import { Collage } from '@/components/Collage'
 import { ImagePlaceholder } from '@/components/ImagePlaceholder'
 import { ScrollReveal } from '@/components/ScrollReveal'
+import { CollageImage } from './CollageImage'
 
 export function StandardsAdvocacy() {
   return (
@@ -18,7 +19,7 @@ export function StandardsAdvocacy() {
         </div>
 
         <Collage side="left">
-          <ImagePlaceholder label="Photo placeholder" />
+          <CollageImage src="/images/class.jpg" alt="Clean those boots" />
         </Collage>
       </ScrollReveal>
     </section>

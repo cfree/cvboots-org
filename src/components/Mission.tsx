@@ -1,6 +1,7 @@
 import { Collage } from '@/components/Collage'
 import { CollageImage } from '@/components/CollageImage'
 import { ScrollReveal } from '@/components/ScrollReveal'
+import { ImagePlaceholder } from './ImagePlaceholder'
 
 export const MISSION_STATEMENT =
   'CVBA keeps the bootblack tradition alive — honoring the folks who built it, and showing up with care for every boot on the stand.'
@@ -19,7 +20,7 @@ export function Mission() {
         </div>
 
         <Collage side="left">
-          <CollageImage src="/stand.jpg" alt="Bootblack stand" />
+          <CollageImage src="/images/customer.jpg" alt="Clean those boots" />
         </Collage>
       </ScrollReveal>
     </section>

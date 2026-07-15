@@ -1,6 +1,7 @@
 import { Collage } from '@/components/Collage'
 import { ImagePlaceholder } from '@/components/ImagePlaceholder'
 import { ScrollReveal } from '@/components/ScrollReveal'
+import { CollageImage } from './CollageImage'
 
 export function WhatWeDo() {
   return (
@@ -18,7 +19,7 @@ export function WhatWeDo() {
         </div>
 
         <Collage side="right">
-          <ImagePlaceholder label="Photo placeholder" />
+          <CollageImage src="/images/pov.jpg" alt="Bootblack stand" />
         </Collage>
       </ScrollReveal>
     </section>

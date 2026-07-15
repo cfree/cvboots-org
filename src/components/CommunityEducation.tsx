@@ -18,7 +18,7 @@ export function CommunityEducation() {
         </div>
 
         <Collage side="right">
-          <CollageImage src="/clean.jpg" alt="Cleaning boots" />
+          <CollageImage src="/images/clean.jpg" alt="Cleaning boots" />
         </Collage>
       </ScrollReveal>
     </section>

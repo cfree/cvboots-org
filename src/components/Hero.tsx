@@ -6,7 +6,7 @@ export function Hero() {
     <section className="mx-auto max-w-3xl px-4 py-16 text-center md:py-24">
       <ScrollReveal className="flex flex-col items-center gap-10">
         <div>
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase">
+          <p className="text-muted-foreground text-lg tracking-[0.3em] uppercase mb-4">
             Coachella Valley Bootblack Association
           </p>
           <h1 className="font-display text-accent mt-4 text-5xl leading-[0.95] md:text-7xl">
