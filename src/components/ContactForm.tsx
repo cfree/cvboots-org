@@ -4,11 +4,12 @@ import { ScrollReveal } from '@/components/ScrollReveal'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { trackSignUp } from '@/lib/analytics'
+import { Textarea } from '@/components/ui/textarea'
+import { trackContactSubmit } from '@/lib/analytics'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
-export function EmailSignup() {
+export function ContactForm() {
   const [status, setStatus] = useState<Status>('idle')
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -25,9 +26,9 @@ export function EmailSignup() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body,
       })
-      if (!response.ok) throw new Error('Signup failed')
+      if (!response.ok) throw new Error('Submission failed')
       setStatus('success')
-      trackSignUp()
+      trackContactSubmit()
     } catch {
       setStatus('error')
     }
@@ -35,16 +36,16 @@ export function EmailSignup() {
 
   return (
     <section
-      id="signup"
+      id="contact"
       className="mx-auto max-w-2xl px-4 py-16 text-center md:py-24"
     >
       <ScrollReveal className="flex flex-col items-center gap-6">
         <div>
           <h2 className="font-display text-accent text-4xl leading-[0.95] md:text-5xl">
-            Stay in the Loop.
+            Get in Touch.
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Get updates on stands, events, and everything CVBA.
+            Questions, ideas, or want to get involved? Send us a message.
           </p>
         </div>
 
@@ -53,18 +54,18 @@ export function EmailSignup() {
             role="status"
             className="collage-tape rounded-md px-6 py-4 text-lg font-medium"
           >
-            You&#39;re on the list. Watch your inbox.
+            Thanks for reaching out. We&#39;ll be in touch soon.
           </p>
         ) : (
           <form
-            name="signup"
+            name="contact"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
-            className="flex w-full max-w-sm flex-col gap-3 sm:flex-row"
+            className="flex w-full max-w-sm flex-col gap-3"
           >
-            <input type="hidden" name="form-name" value="signup" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="hidden">
               <label>
                 Don&#39;t fill this out if you&#39;re human:
@@ -72,19 +73,51 @@ export function EmailSignup() {
               </label>
             </div>
 
-            <Label htmlFor="signup-email" className="sr-only">
+            <Label htmlFor="contact-name" className="sr-only">
+              Name
+            </Label>
+            <Input
+              id="contact-name"
+              type="text"
+              name="name"
+              required
+              placeholder="Name"
+            />
+
+            <Label htmlFor="contact-email" className="sr-only">
               Email address
             </Label>
             <Input
-              id="signup-email"
+              id="contact-email"
               type="email"
               name="email"
               required
               placeholder="you@example.com"
-              className="flex-1"
             />
+
+            <Label htmlFor="contact-phone" className="sr-only">
+              Phone number
+            </Label>
+            <Input
+              id="contact-phone"
+              type="tel"
+              name="phone"
+              placeholder="Phone (optional)"
+            />
+
+            <Label htmlFor="contact-message" className="sr-only">
+              Message
+            </Label>
+            <Textarea
+              id="contact-message"
+              name="message"
+              required
+              rows={4}
+              placeholder="Your message"
+            />
+
             <Button type="submit" disabled={status === 'submitting'}>
-              {status === 'submitting' ? 'Joining…' : 'Join'}
+              {status === 'submitting' ? 'Sending…' : 'Send'}
             </Button>
           </form>
         )}
@@ -94,10 +127,6 @@ export function EmailSignup() {
             Something went wrong — please try again.
           </p>
         )}
-
-        <p className="text-muted-foreground text-xs">
-          No spam, unsubscribe anytime. This site uses analytics cookies.
-        </p>
       </ScrollReveal>
     </section>
   )

@@ -23,3 +23,7 @@ export function getAnalyticsScripts(isProd: boolean) {
 export function trackSignUp() {
   window.gtag?.('event', 'sign_up')
 }
+
+export function trackContactSubmit() {
+  window.gtag?.('event', 'generate_lead')
+}

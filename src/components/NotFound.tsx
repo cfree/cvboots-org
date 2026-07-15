@@ -10,7 +10,7 @@ export function NotFound() {
         404
       </p>
       <h1 className="font-display text-accent mt-4 text-4xl leading-[0.95]">
-        Nothing on This Stand.
+        Nothing on this stand.
       </h1>
       <p className="text-muted-foreground mt-4">
         The page you&#39;re looking for doesn&#39;t exist.
