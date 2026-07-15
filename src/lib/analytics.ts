@@ -4,7 +4,7 @@ declare global {
   }
 }
 
-const GA_MEASUREMENT_ID = 'G-MNB8N157DQ'
+const GA_MEASUREMENT_ID = 'G-1P8NX4YV72'
 
 export function getAnalyticsScripts(isProd: boolean) {
   if (!isProd) return []
