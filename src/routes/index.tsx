@@ -3,6 +3,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { CommunityEducation } from '@/components/CommunityEducation'
 import { ContactForm } from '@/components/ContactForm'
 import { EmailSignup } from '@/components/EmailSignup'
+import { Events } from '@/components/Events'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
@@ -22,6 +23,7 @@ function Home() {
         <WhatWeDo />
         <StandardsAdvocacy />
         <CommunityEducation />
+        <Events />
         {/* <EmailSignup /> */}
         <ContactForm />
       </main>
