@@ -30,12 +30,12 @@ export const EVENTS: Array<CvbaEvent> = [
     imageAlt:
       'Bike Night flyer: Friday, Oct. 9th, 7–10 PM at Tool Shed, Palm Springs',
     summary:
-      'Satyrs M/C takes over the Tool Shed for a night of bikes and leather. Raffle prizes, drink specials, and a bootblack on hand. Non-riders welcome.',
+      'Satyrs M/C takes over the Tool Shed for a night of bikes and leather. Raffle prizes, drink specials, and a CVBA bootblack on hand. Non-riders welcome.',
     description: `Satyrs M/C is hosting Bike Night at the Tool Shed in Palm Springs. Bring your bike, or just come hang out. Non-riders are welcome.
 
 Expect raffle prizes and drink specials all night.
 
-We'll have a bootblack on hand, so wear your boots and get them shined while you're there.`,
+We'll have a CVBA bootblack on hand, so wear your boots and get them shined while you're there.`,
   },
   {
     id: 'boots-and-bullshit-2026-10',
