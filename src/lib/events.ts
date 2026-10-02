@@ -19,6 +19,25 @@ export type CvbaEvent = {
 
 export const EVENTS: Array<CvbaEvent> = [
   {
+    id: 'bike-night-2026-10',
+    title: 'Bike Night hosted by Satyrs M/C',
+    date: '2026-10-09',
+    startTime: '19:00',
+    endTime: '22:00',
+    venue: 'Tool Shed',
+    address: '600 E Sunny Dunes Rd, Palm Springs, CA 92264',
+    image: '/images/events/2026-10-09_bike-night.png',
+    imageAlt:
+      'Bike Night flyer: Friday, Oct. 9th, 7–10 PM at Tool Shed, Palm Springs',
+    summary:
+      'Satyrs M/C takes over the Tool Shed for a night of bikes and leather. Raffle prizes, drink specials, and a bootblack on hand. Non-riders welcome.',
+    description: `Satyrs M/C is hosting Bike Night at the Tool Shed in Palm Springs. Bring your bike, or just come hang out. Non-riders are welcome.
+
+Expect raffle prizes and drink specials all night.
+
+We'll have a bootblack on hand, so wear your boots and get them shined while you're there.`,
+  },
+  {
     id: 'boots-and-bullshit-2026-10',
     title: 'Boots & Bullshit',
     date: '2026-10-15',
@@ -26,7 +45,7 @@ export const EVENTS: Array<CvbaEvent> = [
     endTime: '21:00',
     venue: 'Rough Trade Gear',
     address: '321 E Arenas Rd, Palm Springs, CA',
-    image: '/images/boots-and-bullshit-oct-2026.jpg',
+    image: '/images/events/boots-and-bullshit-oct-2026.jpg',
     imageAlt:
       'Boots & Bullshit flyer: Thursday, Oct. 15th, 7–9 PM at Rough Trade Gear, Palm Springs',
     summary:
