@@ -58,6 +58,35 @@ Co-hosted by Sky & Kobol. No cover charge. Kits welcome. Don't have one? We'll s
 
 Open to all regardless of race, gender identity or skill level.`,
   },
+  {
+    id: 'hol-devils-night-2026-10',
+    title: "H.O.L-OWEEN: Devil's Night",
+    date: '2026-10-30',
+    startTime: '21:00',
+    endTime: '02:00',
+    venue: 'The Sonoran',
+    address: '1555 S Palm Canyon Dr, Palm Springs, CA 92264',
+    image: '/images/events/2026-10-30_hol-devils-night.jpg',
+    imageAlt:
+      "House of Leather Devil's Night flyer: 10.30.2026, Palm Springs Leather Pride",
+    summary:
+      "House of Leather's Palm Springs Leather Pride party. 4 DJs, 4 rooms, The Kennel pup mosh space, and bootblacking by Sky Russell & KOBOL in the Red Room.",
+    description: `The Kink Comes Out At Night! Bigger, bolder, and scarier. House of Leather presents a leather-based dance experience celebrating the iconic culture of queer leather's past and its evolution into today's BDSM and kink communities.
+
+4 DJs, 4 rooms, 2 outdoor areas, and introducing The Kennel, an all-new pup mosh space.
+
+DJs TDON & Matt Consola in the Main Room. MOODY & Either of Us (Doug Jackson & Gabe Real) in the Manhole Room.
+
+Bootblacking by Sky Russell (Mr. Mister Kink 2027) & KOBOL in the Red Room, alongside leather and fetish vendors Sir Rat Leather, Sweaty Johnson, and Mr. Kink.
+
+Dress code: leather, kink, fetish & pup gear.
+
+This event sells out in advance. Advance tickets save off the $50 door price.`,
+    link: {
+      label: 'Get Tickets',
+      url: 'https://sickening.events/e/h-o-l-oween-palm-springs-leather-pride-2026-devils',
+    },
+  },
 ]
 
 function parseDate(date: string) {
