@@ -35,19 +35,22 @@ export function Events({ events }: { events?: Array<CvbaEvent> }) {
             Upcoming Events.
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
-            Come find us on the stand.
+            Come find us at the stand.
           </p>
         </div>
 
         <ul className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-16">
           {upcoming.length > 0 ? (
             upcoming.map((event) => (
-              <li key={event.id} className="w-full max-w-sm">
+              <li
+                key={event.id}
+                className="w-full max-w-sm sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
+              >
                 <EventCard event={event} />
               </li>
             ))
           ) : (
-            <li className="w-full max-w-sm">
+            <li className="w-full max-w-sm sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]">
               <NextDateComingSoon />
             </li>
           )}
@@ -112,14 +115,6 @@ function EventCard({ event }: { event: CvbaEvent }) {
             </span>
           </button>
         </Dialog.Trigger>
-
-        {event.link && (
-          <Button asChild size="lg" className="mt-5 self-start">
-            <a href={event.link.url} target="_blank" rel="noopener noreferrer">
-              {event.link.label}
-            </a>
-          </Button>
-        )}
       </article>
 
       <EventDetails event={event} />

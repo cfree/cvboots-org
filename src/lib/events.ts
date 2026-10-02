@@ -58,6 +58,29 @@ Co-hosted by Sky & Kobol. No cover charge. Kits welcome. Don't have one? We'll s
 
 Open to all regardless of race, gender identity or skill level.`,
   },
+  {
+    id: 'hol-devils-night-2026-10',
+    title: "H.O.L-OWEEN: Devil's Night",
+    date: '2026-10-30',
+    startTime: '21:00',
+    endTime: '02:00',
+    venue: 'The Sonoran',
+    address: '1555 S Palm Canyon Dr, Palm Springs, CA 92264',
+    image: '/images/events/2026-10-30_hol-devils-night.jpg',
+    imageAlt:
+      "House of Leather Devil's Night flyer: 10.30.2026, Palm Springs Leather Pride",
+    summary:
+      'Your tips count double! Kobol and Sky (Mr. Mister Kink 2027) are bootblacking in the Red Room all night, and H.O.L. matches every dollar to help send Kobol to International Mr. Bootblack 2027.',
+    description: `Your tips count double! Kobol and Sky (Mr. Mister Kink 2027) are bootblacking in the Red Room all night, and H.O.L. matches every dollar to help send Kobol to International Mr. Bootblack 2027.
+
+About the party: House of Leather's Palm Springs Leather Pride dance party, with 4 DJs, 4 rooms, 2 outdoor areas, and The Kennel, an all-new pup mosh space. Dress code: leather, kink, fetish & pup gear.
+
+This event sells out in advance, and advance tickets save off the $50 door price.`,
+    link: {
+      label: 'Get Tickets',
+      url: 'https://sickening.events/e/h-o-l-oween-palm-springs-leather-pride-2026-devils',
+    },
+  },
 ]
 
 function parseDate(date: string) {
