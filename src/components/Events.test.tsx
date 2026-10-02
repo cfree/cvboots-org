@@ -21,7 +21,7 @@ const event: CvbaEvent = {
 }
 
 describe('Events', () => {
-  it('renders an upcoming event card with its date, time, and link', () => {
+  it('renders an upcoming event card with its date and time, keeping the link for the details modal', () => {
     render(<Events events={[event]} />)
 
     expect(
@@ -30,10 +30,7 @@ describe('Events', () => {
     expect(screen.getByText('Shine Night')).toBeInTheDocument()
     expect(screen.getByText(/wed\. jun\. 5th/i)).toBeInTheDocument()
     expect(screen.getByText(/7PM – 10:30PM/)).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'RSVP' })).toHaveAttribute(
-      'href',
-      'https://example.com/rsvp',
-    )
+    expect(screen.queryByRole('link', { name: 'RSVP' })).not.toBeInTheDocument()
   })
 
   it('opens a details modal with the full description and venue when the card is clicked', () => {
@@ -46,6 +43,10 @@ describe('Events', () => {
     const dialog = screen.getByRole('dialog', { name: 'Shine Night' })
     expect(dialog).toHaveTextContent('Second paragraph.')
     expect(dialog).toHaveTextContent('123 Main St, Palm Springs, CA')
+    expect(screen.getByRole('link', { name: 'RSVP' })).toHaveAttribute(
+      'href',
+      'https://example.com/rsvp',
+    )
 
     fireEvent.click(screen.getByRole('button', { name: /close/i }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
