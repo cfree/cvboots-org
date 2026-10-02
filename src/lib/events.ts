@@ -70,10 +70,8 @@ Open to all regardless of race, gender identity or skill level.`,
     imageAlt:
       "House of Leather Devil's Night flyer: 10.30.2026, Palm Springs Leather Pride",
     summary:
-      "Get your boots shined by Kobol & Sky in the Red Room. Every dollar you tip is matched by H.O.L. toward Kobol's run for International Mr. Bootblack 2027.",
-    description: `Kobol is running for International Mr. Bootblack 2027, and Devil's Night is a fundraiser for the run.
-
-Find Kobol and Sky (Mr. Mister Kink 2027) bootblacking in the Red Room all night. Every dollar you tip us is matched by H.O.L., all going toward Kobol's 2027 IMBB run.
+      'Your tips count double! Kobol and Sky (Mr. Mister Kink 2027) are bootblacking in the Red Room all night, and H.O.L. matches every dollar to help send Kobol to International Mr. Bootblack 2027.',
+    description: `Your tips count double! Kobol and Sky (Mr. Mister Kink 2027) are bootblacking in the Red Room all night, and H.O.L. matches every dollar to help send Kobol to International Mr. Bootblack 2027.
 
 About the party: House of Leather's Palm Springs Leather Pride dance party, with 4 DJs, 4 rooms, 2 outdoor areas, and The Kennel, an all-new pup mosh space. Dress code: leather, kink, fetish & pup gear.
 
