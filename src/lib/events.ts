@@ -70,18 +70,14 @@ Open to all regardless of race, gender identity or skill level.`,
     imageAlt:
       "House of Leather Devil's Night flyer: 10.30.2026, Palm Springs Leather Pride",
     summary:
-      "House of Leather's Palm Springs Leather Pride party. 4 DJs, 4 rooms, The Kennel pup mosh space, and bootblacking by Sky Russell & KOBOL in the Red Room.",
-    description: `The Kink Comes Out At Night! Bigger, bolder, and scarier. House of Leather presents a leather-based dance experience celebrating the iconic culture of queer leather's past and its evolution into today's BDSM and kink communities.
+      "Get your boots shined by KOBOL & Sky Russell in the Red Room. Every dollar you tip is matched by H.O.L. toward KOBOL's run for International Mr. Bootblack 2027.",
+    description: `KOBOL is running for International Mr. Bootblack 2027, and Devil's Night is a fundraiser for the run.
 
-4 DJs, 4 rooms, 2 outdoor areas, and introducing The Kennel, an all-new pup mosh space.
+Find KOBOL and Sky Russell (Mr. Mister Kink 2027) bootblacking in the Red Room all night. Every dollar you tip us is matched by H.O.L., all going toward KOBOL's 2027 IMBB run.
 
-DJs TDON & Matt Consola in the Main Room. MOODY & Either of Us (Doug Jackson & Gabe Real) in the Manhole Room.
+About the party: House of Leather's Palm Springs Leather Pride dance party, with 4 DJs, 4 rooms, 2 outdoor areas, and The Kennel, an all-new pup mosh space. Dress code: leather, kink, fetish & pup gear.
 
-Bootblacking by Sky Russell (Mr. Mister Kink 2027) & KOBOL in the Red Room, alongside leather and fetish vendors Sir Rat Leather, Sweaty Johnson, and Mr. Kink.
-
-Dress code: leather, kink, fetish & pup gear.
-
-This event sells out in advance. Advance tickets save off the $50 door price.`,
+This event sells out in advance, and advance tickets save off the $50 door price.`,
     link: {
       label: 'Get Tickets',
       url: 'https://sickening.events/e/h-o-l-oween-palm-springs-leather-pride-2026-devils',
