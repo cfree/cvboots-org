@@ -4,6 +4,7 @@ import { CalendarDays, MapPin, X } from 'lucide-react'
 
 import { ScrollReveal } from '@/components/ScrollReveal'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 import {
   EVENTS,
   formatEventDate,
@@ -27,6 +28,12 @@ export function useUpcomingEvents(events: Array<CvbaEvent> = EVENTS) {
 export function Events({ events }: { events?: Array<CvbaEvent> }) {
   const upcoming = useUpcomingEvents(events)
 
+  // Three per row on desktop, except exactly four, which reads better as 2 × 2.
+  const itemClassName = cn(
+    'w-full max-w-sm sm:w-[calc((100%-2rem)/2)]',
+    upcoming.length !== 4 && 'lg:w-[calc((100%-4rem)/3)]',
+  )
+
   return (
     <section id="events" className="mx-auto max-w-5xl px-4 py-16 md:py-24">
       <ScrollReveal>
@@ -42,15 +49,12 @@ export function Events({ events }: { events?: Array<CvbaEvent> }) {
         <ul className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-16">
           {upcoming.length > 0 ? (
             upcoming.map((event) => (
-              <li
-                key={event.id}
-                className="w-full max-w-sm sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]"
-              >
+              <li key={event.id} className={itemClassName}>
                 <EventCard event={event} />
               </li>
             ))
           ) : (
-            <li className="w-full max-w-sm sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]">
+            <li className={itemClassName}>
               <NextDateComingSoon />
             </li>
           )}

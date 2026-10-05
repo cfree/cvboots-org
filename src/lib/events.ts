@@ -81,6 +81,28 @@ This event sells out in advance, and advance tickets save off the $50 door price
       url: 'https://sickening.events/e/h-o-l-oween-palm-springs-leather-pride-2026-devils',
     },
   },
+  {
+    id: 'cocktails-and-cowhides-2026-10',
+    title: 'Cocktails & Cowhides',
+    date: '2026-10-25',
+    startTime: '15:00',
+    endTime: '18:00',
+    venue: 'Smoketree Manor',
+    image: '/images/events/2026-10-25_cocktails-and-cowhides.jpg',
+    imageAlt:
+      'Cocktails & Cowhides flyer: a poolside fundraiser for the Leather Archives & Museum, Sunday, October 25th, 3–6 PM at Smoketree Manor, Cathedral City',
+    summary:
+      "We'll be on site bootblacking, and a portion of our tips will be donated to the Leather Archives & Museum.",
+    description: `Silent auction, charcuterie, cocktails & mocktails, cigars, and community. Leather & gear welcome!
+
+We'll be on site bootblacking, and a portion of our tips will be donated to the Leather Archives & Museum.
+
+RSVP by emailing gary@leatherarchives.org.`,
+    link: {
+      label: 'RSVP by Email',
+      url: 'mailto:gary@leatherarchives.org?subject=RSVP%20for%20Cocktails%20%26%20Cowhides',
+    },
+  },
 ]
 
 function parseDate(date: string) {
