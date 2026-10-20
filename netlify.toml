@@ -5,3 +5,17 @@
   command = "npm run dev"
   targetPort = 3000
   port = 8888
+
+# Bootblack Waitline test (Kobol), hosted on Railway and shown at cvboots.org/kobol-test.
+# Netlify passes these requests through to the app; visitors stay on cvboots.org.
+[[redirects]]
+  from = "/kobol-test"
+  to = "https://kobol-test-production.up.railway.app/kobol-test"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/kobol-test/*"
+  to = "https://kobol-test-production.up.railway.app/kobol-test/:splat"
+  status = 200
+  force = true
